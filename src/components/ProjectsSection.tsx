@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     title: 'MovieSpot',
     description: 'MovieSpot is an app that allows users to explore TV shows and movies, offering search functionality, detailed movie information, infinite scrolling, and responsive design for different devices.',
-    image: 'https://private-user-images.githubusercontent.com/96122653/395789886-6711e310-13a7-455b-a9c9-9d46449003a8.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM4NTM0MjEsIm5iZiI6MTc0Mzg1MzEyMSwicGF0aCI6Ii85NjEyMjY1My8zOTU3ODk4ODYtNjcxMWUzMTAtMTNhNy00NTViLWE5YzktOWQ0NjQ0OTAwM2E4LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA1VDExMzg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0NGJiYmQ2NTdjMjQ1NTY5NDZkOTFiNDI2YzRhNTcxMTQ5ZjYyYmVmNTk4NDU1YWE5ZTIyMzk5YTg3NzFmNGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BEQLF-KNsL1phFlsb6S_g2fDH-IGfPoyYnIkkyc1I8A',
+    image: '/placeholder.svg',
     tags: ['Flutter', 'Dart', 'REST API'],
     links: {
       demo: '#',

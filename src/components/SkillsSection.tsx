@@ -6,7 +6,7 @@ const skills = [
   {
     category: 'Mobile Development',
     icon: Smartphone,
-    technologies: ['Flutter', 'Dart', 'Ionic'],
+    technologies: ['Flutter', 'Dart', 'Kotlin'],
     color: 'from-blue-500 to-cyan-400',
   },
   {

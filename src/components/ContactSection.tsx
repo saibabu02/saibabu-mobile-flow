@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MessageCircle, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MessageCircle, Github, Linkedin, Twitter, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -29,19 +29,21 @@ const ContactSection = () => {
                 
                 <div className="flex items-center text-foreground/80 hover:text-primary transition-colors">
                   <Mail className="h-5 w-5 mr-3" />
-                  <a href="mailto:lucas@example.com">lucas@example.com</a>
+                  <a href="mailto:saibabubobba2003@gmail.com">saibabubobba2003@gmail.com</a>
                 </div>
                 
                 <div className="flex items-center text-foreground/80 hover:text-primary transition-colors">
-                  <MessageCircle className="h-5 w-5 mr-3" />
-                  <span>Schedule a call</span>
+                  <Phone className="h-5 w-5 mr-3" />
+                  <span>+91 9290816685</span>
                 </div>
 
                 <div className="pt-6 flex space-x-4">
                   <a 
-                    href="#" 
+                    href="https://github.com/SaiBabu03" 
                     className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground/70 hover:bg-primary hover:text-white transition-colors"
                     aria-label="GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Github className="h-5 w-5" />
                   </a>
