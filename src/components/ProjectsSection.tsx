@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { motion } from 'react-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -47,20 +46,9 @@ const projects = [
 const ProjectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
   
-  const springConfig = { stiffness: 150, damping: 20 };
-  const style = {
-    scale: isHovered ? { val: 1.03, config: springConfig } : { val: 1, config: springConfig },
-    shadow: isHovered ? { val: 20, config: springConfig } : { val: 5, config: springConfig },
-  };
-
   return (
-    <motion.div
-      style={{
-        transform: `scale(${style.scale.val})`,
-        boxShadow: `0 ${style.shadow.val}px ${style.shadow.val * 2}px rgba(0,0,0,0.1)`,
-        transition: 'all 0.3s ease',
-      }}
-      className="w-full"
+    <div 
+      className={`w-full transition-all duration-300 transform ${isHovered ? 'scale-[1.03] shadow-lg' : 'scale-100 shadow-md'}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -102,7 +90,7 @@ const ProjectCard = ({ project, index }) => {
           </Button>
         </CardContent>
       </Card>
-    </motion.div>
+    </div>
   );
 };
 
