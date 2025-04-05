@@ -13,33 +13,21 @@ const projects = [
     tags: ['Flutter', 'Dart', 'Provider'],
     links: {
       demo: '#',
-      github: '#',
+      github: 'https://github.com/SaiBabu03/echonews',
     },
     color: 'from-red-500 to-orange-500',
   },
   {
     id: 2,
-    title: 'EcoScan',
-    description: 'Scan products to check their environmental impact and find eco-friendly alternatives.',
-    image: '/placeholder.svg',
-    tags: ['Flutter', 'Firebase ML', 'GraphQL'],
+    title: 'MovieSpot',
+    description: 'MovieSpot is an app that allows users to explore TV shows and movies, offering search functionality, detailed movie information, infinite scrolling, and responsive design for different devices.',
+    image: 'https://private-user-images.githubusercontent.com/96122653/395789886-6711e310-13a7-455b-a9c9-9d46449003a8.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM4NTM0MjEsIm5iZiI6MTc0Mzg1MzEyMSwicGF0aCI6Ii85NjEyMjY1My8zOTU3ODk4ODYtNjcxMWUzMTAtMTNhNy00NTViLWE5YzktOWQ0NjQ0OTAwM2E4LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA1VDExMzg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0NGJiYmQ2NTdjMjQ1NTY5NDZkOTFiNDI2YzRhNTcxMTQ5ZjYyYmVmNTk4NDU1YWE5ZTIyMzk5YTg3NzFmNGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BEQLF-KNsL1phFlsb6S_g2fDH-IGfPoyYnIkkyc1I8A',
+    tags: ['Flutter', 'Dart', 'REST API'],
     links: {
       demo: '#',
-      github: '#',
+      github: 'https://github.com/SaiBabu03/MovieSpot',
     },
     color: 'from-green-500 to-emerald-500',
-  },
-  {
-    id: 3,
-    title: 'CryptoWallet',
-    description: 'Secure mobile wallet for cryptocurrency management with real-time market data.',
-    image: '/placeholder.svg',
-    tags: ['React Native', 'Web3.js', 'TypeScript'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-    color: 'from-purple-500 to-pink-500',
   },
 ];
 
@@ -55,29 +43,21 @@ const ProjectCard = ({ project, index }) => {
       <Card className="overflow-hidden h-full group bg-white dark:bg-gray-800 border-0">
         <div className={`h-48 bg-gradient-to-r ${project.color} relative overflow-hidden`}>
           <div className="absolute inset-0 flex items-center justify-center">
-            {project.id === 1 ? (
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="h-full object-contain transform rotate-0 transition-transform duration-300 shadow-lg"
-              />
-            ) : (
-              <div className="w-32 h-64 bg-white/10 rounded-[32px] border-4 border-white/30 overflow-hidden shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
-                <div className="h-full w-full bg-black/10 flex items-center justify-center">
-                  <span className="text-white text-sm font-medium">App Preview</span>
-                </div>
-              </div>
-            )}
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="h-full object-contain transform rotate-0 transition-transform duration-300 shadow-lg"
+            />
           </div>
         </div>
         <CardContent className="p-6">
           <div className="flex items-start justify-between mb-4">
             <h3 className="text-xl font-bold">{project.title}</h3>
             <div className="flex space-x-2">
-              <a href={project.links.github} aria-label="View source code on GitHub">
+              <a href={project.links.github} aria-label="View source code on GitHub" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5 text-foreground/70 hover:text-primary transition-colors" />
               </a>
-              <a href={project.links.demo} aria-label="View live demo">
+              <a href={project.links.demo} aria-label="View live demo" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-5 w-5 text-foreground/70 hover:text-primary transition-colors" />
               </a>
             </div>
@@ -115,16 +95,18 @@ const ProjectsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
         
         <div className="mt-12 text-center">
-          <Button variant="outline" size="lg" className="rounded-full">
-            View All Projects
-          </Button>
+          <a href="https://github.com/SaiBabu03?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="lg" className="rounded-full">
+              View All Projects
+            </Button>
+          </a>
         </div>
       </div>
     </section>

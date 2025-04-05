@@ -1,43 +1,25 @@
 
 import React from 'react';
-import { Smartphone, Code, Server, Palette, Monitor, BarChart } from 'lucide-react';
+import { Smartphone, Code, Palette } from 'lucide-react';
 
 const skills = [
   {
     category: 'Mobile Development',
     icon: Smartphone,
-    technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Ionic'],
+    technologies: ['Flutter', 'Dart', 'Ionic'],
     color: 'from-blue-500 to-cyan-400',
   },
   {
     category: 'Frontend Development',
     icon: Code,
-    technologies: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Redux'],
+    technologies: ['JavaScript', 'HTML/CSS'],
     color: 'from-purple-500 to-indigo-500',
-  },
-  {
-    category: 'Backend Development',
-    icon: Server,
-    technologies: ['Node.js', 'Firebase', 'MongoDB', 'GraphQL', 'REST APIs'],
-    color: 'from-green-500 to-teal-400',
   },
   {
     category: 'UI/UX Design',
     icon: Palette,
     technologies: ['Figma', 'Adobe XD', 'Prototyping', 'User Testing', 'Wireframing'],
     color: 'from-pink-500 to-rose-400',
-  },
-  {
-    category: 'Testing & Deployment',
-    icon: Monitor,
-    technologies: ['Jest', 'Detox', 'CI/CD', 'App Store', 'Google Play'],
-    color: 'from-amber-500 to-orange-400',
-  },
-  {
-    category: 'Analytics & Performance',
-    icon: BarChart,
-    technologies: ['Performance Optimization', 'Firebase Analytics', 'Crash Reporting', 'App Metrics'],
-    color: 'from-red-500 to-pink-400',
   },
 ];
 
