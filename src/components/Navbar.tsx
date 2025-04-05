@@ -40,7 +40,7 @@ const Navbar = () => {
           href="#home" 
           className="text-xl font-heading font-bold text-gradient"
         >
-          Lucas<span className="text-primary">Dev</span>
+          SaiBabu<span className="text-primary">Dev</span>
         </a>
 
         {/* Desktop Navigation */}
