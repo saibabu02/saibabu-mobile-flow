@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-32 relative">
+  return <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-32 relative">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-sky-50 dark:from-gray-900 dark:to-blue-900 -z-10" />
       
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -14,7 +11,7 @@ const HeroSection = () => {
             Mobile App Developer
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-            Hi, I'm <span className="text-gradient">Lucas</span> <br />
+            Hi, I'm <span className="text-gradient">Sai Babu</span> <br />
             I build amazing <br /> mobile experiences
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-md">
@@ -38,9 +35,9 @@ const HeroSection = () => {
               <p className="mb-6">Crafting beautiful and responsive mobile experiences</p>
               <div className="h-1 w-12 bg-white mb-6 rounded" />
               <div className="grid grid-cols-3 gap-4 w-full">
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <div key={item} className="aspect-square bg-white/20 rounded-lg animate-pulse-subtle" style={{ animationDelay: `${item * 0.2}s` }} />
-                ))}
+                {[1, 2, 3, 4, 5, 6].map(item => <div key={item} className="aspect-square bg-white/20 rounded-lg animate-pulse-subtle" style={{
+                animationDelay: `${item * 0.2}s`
+              }} />)}
               </div>
             </div>
           </div>
@@ -51,15 +48,10 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll indicator */}
-      <a 
-        href="#projects" 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-foreground/70 hover:text-primary transition-colors"
-      >
+      <a href="#projects" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-foreground/70 hover:text-primary transition-colors">
         <span className="text-sm mb-2">Scroll Down</span>
         <ArrowDown className="animate-bounce-subtle" size={20} />
       </a>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
