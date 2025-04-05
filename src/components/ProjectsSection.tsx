@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     title: 'Echo News',
     description: 'EchoNewsApp is a sleek and modern Flutter-based news application that delivers the latest headlines from trusted sources right to your fingertips.',
-    image: '/lovable-uploads/c41d6ea8-8340-443d-a74e-4dbb6f8349c9.png',
+    image: 'https://github.com/SaiBabu03/echonews/raw/master/Screenshot_20250405_090026.png',
     tags: ['Flutter', 'Dart', 'Provider'],
     links: {
       demo: '#',
