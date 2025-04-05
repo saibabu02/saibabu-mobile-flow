@@ -7,15 +7,15 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     id: 1,
-    title: 'FitTrack Pro',
-    description: 'A fitness tracking app with personalized workout plans and nutrition guidance.',
-    image: '/placeholder.svg',
-    tags: ['React Native', 'Firebase', 'Redux'],
+    title: 'Echo News',
+    description: 'EchoNewsApp is a sleek and modern Flutter-based news application that delivers the latest headlines from trusted sources right to your fingertips.',
+    image: '/lovable-uploads/c41d6ea8-8340-443d-a74e-4dbb6f8349c9.png',
+    tags: ['Flutter', 'Dart', 'Provider'],
     links: {
       demo: '#',
       github: '#',
     },
-    color: 'from-blue-500 to-indigo-500',
+    color: 'from-red-500 to-orange-500',
   },
   {
     id: 2,
@@ -55,11 +55,19 @@ const ProjectCard = ({ project, index }) => {
       <Card className="overflow-hidden h-full group bg-white dark:bg-gray-800 border-0">
         <div className={`h-48 bg-gradient-to-r ${project.color} relative overflow-hidden`}>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-32 h-64 bg-white/10 rounded-[32px] border-4 border-white/30 overflow-hidden shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
-              <div className="h-full w-full bg-black/10 flex items-center justify-center">
-                <span className="text-white text-sm font-medium">App Preview</span>
+            {project.id === 1 ? (
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="h-full object-contain transform rotate-0 transition-transform duration-300 shadow-lg"
+              />
+            ) : (
+              <div className="w-32 h-64 bg-white/10 rounded-[32px] border-4 border-white/30 overflow-hidden shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
+                <div className="h-full w-full bg-black/10 flex items-center justify-center">
+                  <span className="text-white text-sm font-medium">App Preview</span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
         <CardContent className="p-6">
