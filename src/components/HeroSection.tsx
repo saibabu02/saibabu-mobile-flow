@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="w-64 h-[500px] md:w-72 md:h-[550px] relative rounded-[40px] overflow-hidden border-8 border-foreground shadow-xl animate-fade-in">
             <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-accent/80 opacity-90" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
-              <h3 className="text-2xl font-bold mb-4">Native Mobile Apps</h3>
+              <h3 className="text-2xl font-bold mb-4">Cross Platform Mobile Apps</h3>
               <p className="mb-6">Crafting beautiful and responsive mobile experiences</p>
               <div className="h-1 w-12 bg-white mb-6 rounded" />
               <div className="grid grid-cols-3 gap-4 w-full">
